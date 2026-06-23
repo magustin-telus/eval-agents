@@ -11,6 +11,13 @@ from .data import (
     BankComplaintsDataset,
     ComplaintResolutionOutput,
 )
+from .data_analysis import (
+    compute_agent_metrics,
+    compute_retrieval_metrics,
+    get_dataset_statistics,
+    test_agent_on_sample,
+    test_retrieval_on_sample,
+)
 from .embeddings import EmbeddingClient
 from .graders import item_level_deterministic_grader, run_level_grader
 from .kb import (
@@ -33,8 +40,13 @@ __all__ = [
     "EmbeddingClient",
     "PolicyDoc",
     "PolicyKnowledgeBase",
+    "compute_agent_metrics",
+    "compute_retrieval_metrics",
     "create_complaint_resolution_agent",
     "create_policy_retrieval_tool",
+    "get_dataset_statistics",
     "item_level_deterministic_grader",
     "run_level_grader",
+    "test_agent_on_sample",
+    "test_retrieval_on_sample",
 ]
